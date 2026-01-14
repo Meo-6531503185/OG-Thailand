@@ -280,25 +280,27 @@
         .btn-contact-white {
             background-color: #ffffff;
             color: #0072bc;
-            padding: 12px 150px;
-            border: none;
+            /* ปรับ padding ให้ปุ่มมีความยาวและสัดส่วนที่ถูกต้อง */
+            padding: 15px 120px;
             border-radius: 50px;
-            font-size: 1.1rem;
-            font-weight: 800;
+            text-decoration: none;
+            font-size: 28px;
+            /* ขนาดตัวอักษรใหญ่ชัดเจน */
+            font-weight: 700;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            text-decoration: none;
-            transition: opacity 0.3s;
+            transition: all 0.3s ease;
+            border: none;
             cursor: pointer;
-            box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
-        .btn-contact-white::after {
-            content: " »";
-            font-size: 1.5rem;
-            margin-left: 10px;
-            vertical-align: middle;
+        .btn-contact-white .arrow {
+            margin-left: 15px;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 1;
         }
 
         .btn-contact-white:hover {
